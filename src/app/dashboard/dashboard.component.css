@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+}
+
+.module {
+	padding: 20px;
+	text-align: center;
+	color: #eee;
+	background-color: #607d8b;
+	border-radius: 10px;
+}
+.module:hover {
+	background-color: #eee;
+	color: #607d8b;
+}

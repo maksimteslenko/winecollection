@@ -1,0 +1,17 @@
+ul {
+	list-style: none;
+}
+
+li {
+	padding-top:10px;
+
+}
+a {
+	text-decoration: none;
+	color: #888;
+}
+
+button {
+	padding: 3px 10px;
+  	border-radius: 4px;
+}

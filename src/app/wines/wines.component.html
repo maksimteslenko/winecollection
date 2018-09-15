@@ -1,0 +1,39 @@
+<div class="row">
+
+
+  <h2>My Wine Collection</h2>
+
+  <ul class="wines">
+    <li *ngFor="let wine of wines">
+      <a routerLink="/detail/{{wine.id}}">
+        <span class="badge">{{wine.id}}</span> {{wine.name}}
+      </a>
+      <button class="btn btn-default" title="Delete bottle" (click)="delete(wine)"><i class="fas fa-trash-alt"></i></button>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+    <h3>New bottle</h3>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Name:</label>
+            <input class="form-control" #wineName />
+          </div>
+          <div class="form-group">
+            <label>Year:</label>
+            <input class="form-control" #wineYear />
+          </div>
+          <div class="form-group">
+              <label>Producer:</label>
+              <input class="form-control" #wineProducer />
+          </div>
+          <div class="form-group">
+              <button class="btn btn-default" (click)="add(wineName.value, wineYear.value, wineProducer.value); wineName.value=''; wineYear.value='';wineProducer.value=''"><i class="fas fa-plus-square"></i> Add</button>
+          </div>
+        </div>
+      </div>
+    
+</div>
+
